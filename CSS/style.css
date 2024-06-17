@@ -1,0 +1,885 @@
+:root {
+    --First-color: #000000;
+    --Second-color: #ff8049;
+    --Third-color: #ffb17d;
+    --Fourth-color: #FFE9C1;
+    --Fifth-color: #7BB199;
+    --Sixth-color: #059379;
+    --Seventh-color: #8f8984;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.index-header {
+    background-color: #131212;
+    color: #fff;
+}
+
+.index-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 6rem;
+}
+.busqueda input{
+    display: none;
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botones a {
+    color: #ffffffbd;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.logo-nav {
+    width: 25px;
+    position: relative;
+    align-self: center;
+    margin-left: 0.2rem;
+}
+.logo{
+    width: 35px;
+    align-self: center;
+    margin: 0.2rem;
+}
+
+.welcome {
+    background-image: url('https://a.ltrbxd.com/resized/sm/upload/1v/t5/ny/lk/MV5BYWRmZWM2ZTktMzE1Ny00NmQyLWE3ZDItZTk5MjY5OGQ5NzdhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_-1200-1200-675-675-crop-000000.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f8f2f2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30%;
+    height: 90vh;
+}
+
+.welcome-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-content p {
+    font-size: 1.6rem;
+}
+
+.welcome-content .button {
+    position: relative;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 50%;
+    margin: 1rem auto;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-content .button a {
+    color: #ff3d4a;
+}
+
+.welcome-content .button:hover {
+    background-color: #ff3d4a;
+}
+
+.welcome-content .button a:hover {
+    color: white;
+}
+
+.carrusel {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.carrusel-title {
+    margin-bottom: 1rem;
+}
+
+.contenedor-carrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.item-carrusel {
+    border-radius: 20px;
+    width: 210px;
+    margin-bottom: 2rem;
+}
+
+#item__pelicula-1{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/peliculas1.jpg);
+}
+#item__pelicula-2{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/peliculas2.jpg);
+}
+#item__pelicula-3{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/pelicula3.jpg);
+}
+#item__pelicula-4{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/pelicula4.jpeg);
+}
+#item__pelicula-5{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/pelicula5.jpg);
+}
+#item__pelicula-1,
+#item__pelicula-2,
+#item__pelicula-3,
+#item__pelicula-4,
+#item__pelicula-5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 23.5rem;
+    border-radius: 10px;
+}
+#item__pelicula-1 p,
+#item__pelicula-2 p,
+#item__pelicula-3 p,
+#item__pelicula-4 p,
+#item__pelicula-5 p{
+    position: absolute;
+    padding-top: 2.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+#item__pelicula-1:hover,
+#item__pelicula-2:hover,
+#item__pelicula-3:hover,
+#item__pelicula-4:hover,
+#item__pelicula-5:hover{
+    background-color: rgba(0, 0, 0, 0.781);
+}
+#item__pelicula-1:hover p,
+#item__pelicula-2:hover p,
+#item__pelicula-3:hover p,
+#item__pelicula-4:hover p,
+#item__pelicula-5:hover p{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+.item-carrusel:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: white;
+    margin-bottom: 0px;
+    height: 25vh;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.footer-contenedor .div-footer {
+    max-width: 10rem;
+    min-width: 50px;
+    color: var(--Seventh-color);
+    padding: 0.5rem;
+    border-left: 3px solid var(--Second-color);
+}
+
+.div-footer h4 {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.div-footer li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.div-footer li a {
+    color: rgb(94, 92, 92);
+}
+
+.div-footer li a:hover {
+    color: var(--Sixth-color);
+}
+
+.div-footer li img {
+    width: 8%;
+    min-width: 20px;
+}
+
+nav {
+    background-color: var(--First-color);
+    min-height: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--Sixth-color);
+}
+
+.div-nav1 {
+    display: inline;
+}
+
+.div-item1 a {
+    color: var(--Second-color);
+}
+h3 {
+    color: var(--First-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.logo-inicio {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    display: flex;
+    top: 5%;
+    border-radius: 0 1rem 1rem 0;
+    align-items: center;
+    padding: 0.5rem;
+    z-index: 1;
+}
+.item-nav-generos {
+    color: var(--Fourth-color);
+    align-items: center;
+    padding: 0.5rem;
+}
+.genero a img{
+    width: 100%;
+    max-width: 40px;
+    margin-right: 1rem;
+    padding: 0.1rem;
+    background-color: #ea6f3a65;
+    border-radius: 5px;
+}
+.genero a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.drama,
+.comedia,
+.terror,
+.thriller,
+.musical,
+.comedia,
+.accion,
+.cienciaficcion,
+.fantasia,
+.body--form-peliculas {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    min-height: 1000px;
+    box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
+}
+
+.drama {
+    background-image: url(../MULTIMEDIA/IMAGENES/imagenorgulloyprejuicio.webp);
+}
+
+.drama h1,
+.comedia h1,
+.terror h1,
+.thriller h1,
+.accion h1,
+.musical h1,
+.cienciaficcion h1,
+.fantasia h1 {
+    text-align: center;
+    position: relative;
+    color: var(--Fourth-color);
+    font-size: 4rem;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+.descripcion-genero {
+    position: relative;
+    color: white;
+    background-color: #ffe9c123;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: auto 10vw;
+    font-size: 1.1rem;
+}
+
+.subtitle-list-films {
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.list-films {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1%;
+}
+
+.film-box {
+    background-color: rgba(128, 128, 128, 0.356);
+    border-radius: 1rem;
+    max-width: 255px;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.film-box:hover {
+    box-shadow: 0 0 15px 5px var(--Sixth-color);
+}
+
+picture img {
+    width: 100%;
+    border-radius: 0.5rem;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.film-title {
+    color: white;
+    border-bottom: var(--Second-color) solid 2px;
+    padding: 0.5rem;
+    min-height: 2rem;
+    text-align: center;
+}
+
+.film-sinopsis {
+    color: white;
+    max-height: 210px;
+    overflow: auto;
+    text-align: center;
+}
+
+.film-platforms {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+.platforms {
+    margin-top: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+    text-align: center;
+}
+
+.platform img {
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.titulo-generos {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+.list-generos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.generos,
+.form-generos{
+    background-image: url(../MULTIMEDIA/IMAGENES/denise-jans-Lq6rcifGjOU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
+}
+.genero {
+    max-width: 380px;
+    min-width: 150px;
+    max-height: 160px;
+    min-height: 30px;
+    font-size: 2rem;
+    background-color: #79402894;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.genero a {
+    color: white;
+    text-decoration: none;
+}
+
+.genero a:hover {
+    color: var(--Sixth-color);
+}
+
+.log-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/Fondo-log-sign.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.log-in-section {
+    position: relative;
+    max-width: 400px;
+    background-color:rgba(29, 28, 28, 0.562) ;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.forget {
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+form h1 {
+    font-size: 2rem;
+    color: var(--Second-color);
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid var(--Second-color);
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+}
+
+.forget label input {
+    margin-right: 3px;
+}
+
+.forget a,
+.recordar-contraseña a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.register,
+.Log {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+.register p a,
+.Log p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover,
+.Log p a:hover {
+    text-decoration: underline;
+}
+
+.sign-up-section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background-color:rgba(29, 28, 28, 0.562) ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+.sign-up {
+    min-height: 100vh;
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/Fondo-log-sign.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+}
+
+.sign-up-section form .inputbox {
+    position: relative;
+    margin: 1rem;
+    max-width: 300px;
+    border-bottom: 2px solid var(--Second-color);
+}
+
+.form-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.recordar-contraseña,
+.forget {
+    color: #fff;
+    margin-bottom: 1rem;
+    accent-color: var(--Second-color);
+    cursor: pointer;
+}
+
+.recordar-contraseña input:focus,
+.forget input:focus {
+    outline: none;
+    box-shadow: 0 0 5px 0.5px #ff634798;
+}
+
+.recordar-contraseña input,
+.forget input {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.recordar-contraseña input:checked,
+.forget input:checked {
+    background-image: url('../MULTIMEDIA/IMAGENES/LOGO/Icono.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.form-bottom button {
+    max-width: 50%;
+}
+
+.comedia {
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/ComediaBack.jfif);
+}
+
+.thriller {
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/thrillerBack.jpg);
+}
+
+.terror {
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/terrorBack.jpg);
+}
+
+.accion {
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/accionBack.jpg);
+}
+
+.cienciaficcion {
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/ciencia\ ficcionBack.jpg);
+}
+
+.musical {
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/musicalBack.jpg);
+}
+
+.fantasia {
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/fantasiaBack.webp);
+}
+
+.contenedor-reviews{
+    background-color: var(--Second-color);
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+.contenedor-reviews h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.reviews-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.review{
+    background-color: white;
+    max-width: 250px;
+    border-radius: 0px 10px 10px 10px;
+    padding: 1rem;
+}
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .clasificacion {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  .clasificacion-star:hover{
+    color: orange;
+  }
+  
+  .clasificacion input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  .form-review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+  }
+  #review{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+  .boton-form--generos{
+    background-color: #000000;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    a{color: white;}
+    a:hover{color: var(--Second-color);}
+  }
+
+  .form-generos form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 310px;
+    padding: 50px;
+    background-color: #0000008b;
+    border: solid 1px white;
+    border-radius: 10px;
+    margin: 0 auto;
+    gap: 1rem;
+    max-width: 600px;
+  }
+  .form-generos{
+    width: 100%;
+    height: 100vh;
+  }
+  .form-generos form div{
+    text-align: center;
+  }
+  .titulo-generos h3{
+    color: white;
+  }
+  .body--form-peliculas{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/back-formPeliculas.jpg);
+  }
+  .form-peliculas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 310px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.512);
+    border-radius: 10px;
+    max-width: 300px;
+  }
+  .title--form-peliculas{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding-top: 4rem;
+    text-align: center;
+  }
+  .form-peliculas div{
+    text-align: center;
+    margin-top: 10px;
+    max-width: 230px;
+    }
+    .form-peliculas div span{
+        font-weight: 500;
+    }
+    .form-peliculas div input{
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .section--add-review-peliculas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        gap: 40px;
+    }
+  .button--form-peliculas{
+    background-color: var(--Second-color);
+    color: white;
+    border-radius: 5px;
+    max-width: 320px;
+    padding-top: 1px;
+  }
+  .a--form-peliculas{
+    text-decoration: none;
+    padding: 25px;
+  }
+  .button--form-peliculas:hover{
+    background-color: #000000;
+  }

@@ -1,0 +1,75 @@
+/*min-width: 800px*/
+.index-nav{
+    height: 4rem;
+}
+.busqueda input {
+    min-width: 400px;
+    height: 2.5rem;
+}
+.logo{
+    width: 60px;
+}
+.welcome{
+    height: 500px;
+}
+.welcome-content{
+    position: absolute;
+    top: 40%;
+}
+.welcome-content h2{
+    font-size: 4rem;
+}
+.welcome-content p{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.inputbox{
+    max-width: 50%;
+}
+.sign-up-section{
+    max-width: 700px;
+    margin: 5rem auto;
+}
+.subtitle-list-films {
+    font-size: 2.5rem;
+}
+.film-box {
+    width: 20%;
+    background: transparent;
+    backdrop-filter: blur(80px);
+    border-radius: 1rem;
+    max-height: 800px;
+    min-height: 400px;
+    max-width: 270px;
+    min-width: 250px;
+}
+.genero a img{
+    max-width: 50px;
+    padding: 0.3rem;
+    border-radius: 6px;
+}
+.title-box--review{
+    font-size: 1.5rem;
+    background-color: var(--Fourth-color);
+    height: 220px;
+    max-width: 320px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px 0 0 15px;
+}
+.form-generos form{
+    max-width: 650px;
+}
+.form-peliculas{
+    max-width: 850px;
+}
+#box--form-peliculas{
+    max-width: 400px;
+}
+.section-form-peliculas{
+    background-color: rgba(255, 154, 104, 0.656);
+    padding: 80px;
+    border-radius: 15px 0 0 15px;
+}

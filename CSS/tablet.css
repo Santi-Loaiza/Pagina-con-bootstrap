@@ -1,0 +1,103 @@
+/*min-width: 600px*/
+
+:root {
+    --First-color: #000000;
+    --Second-color: #ff8049;
+    --Third-color: #ffb17d;
+    --Fourth-color: #FFE9C1;
+    --Fifth-color: #7BB199;
+    --Sixth-color: #059379;
+    --Seventh-color: #8f8984;
+}
+.sign-up-section {
+    max-width: 400px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.index-nav {
+    height: 5rem;
+}
+.busqueda input {
+    min-width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 10%;
+    background-color: rgba(128, 128, 128, 0.11);
+    box-shadow: inset 5px 5px 15px 15px  rgba(0, 0, 0, 0.185);
+    color: var(--Fourth-color);
+    display: block;
+}
+.logo{
+    width: 45px;
+}
+.welcome{
+    height: 600px;
+}
+.welcome-content h2{
+    font-size: 4rem;
+}
+.welcome-content p{
+    font-size: 2rem;
+}
+.welcome-content .button{
+    padding: 7px;
+}
+.sign-up-section{
+    max-width: 590px;
+    margin: 10rem auto;
+    background-color: transparent;
+    backdrop-filter: blur(55px);
+}
+.inputbox{
+    max-width: 50%;
+}
+.generos{
+    height: 100vh;
+}
+.subtitle-list-films {
+    font-size: 2rem;
+}
+.film-box {
+    width: 40%;
+    background: transparent;
+    backdrop-filter: blur(80px);
+    border-radius: 1rem;
+    max-height: 800px;
+    min-height: 400px;
+    max-width: 300px;
+    min-width: 250px;
+}
+.botones a{
+    font-size: 1.1rem;
+}
+.log-in-section{
+    background-color: transparent;
+    backdrop-filter: blur(55px);
+}
+.title-box--review{
+    font-size: 1.4rem;
+    background-color: var(--Fourth-color);
+    height: 200px;
+    max-width: 300px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px 0 0 15px;
+}
+.boton-form--generos{
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  .form-generos form{
+    max-width: 500px;
+  }
+  .form-peliculas{
+    max-width: 500px;
+  }
+  .button--form-peliculas{
+    max-width: 400px;
+  }
